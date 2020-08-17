@@ -28,7 +28,8 @@ jobs:
       run: |
         echo Hello, world!
         echo My name is $fullname but I go by $name
-        echo Actor: ${{ github.actor }}
+        eccho Actor: ${{ github.actor }}
+        eccho Actor: ${{ github.actor }}
         echo This code was committed by: ${{ github.event.commits[0].author.name }}
         
   show_context:
