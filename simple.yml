@@ -13,21 +13,24 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  run-shell-command:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-
     # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: eccho Hello, world!
+    - name: echo a string
+      run: echo "Hello world"
 
     # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
+    - name: multiline script
       run: |
         node -v
         npm -v
+    - name: python command
+      run: |
+        import platform
+        print(platform.processor())
+
+      shell: python
