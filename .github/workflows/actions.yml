@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Simple python script Actions
         id: greet
-        uses: sahmed448/git-python/blob/master/printtest.py@1358ce8
+        uses: sahmed448/git-python/blob/master/hello_world.py@ab57e2e4c0c8bae9e9d59209912566d121f9bff1
         with: 
           who-to-greet: jb-run-github-actions
       - name: Log Greeting time
