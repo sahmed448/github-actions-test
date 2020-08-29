@@ -23,7 +23,7 @@ jobs:
     - name: python command
       run: |
         import platform
-        print(platform.processor())
+        printt(platform.processor())
       shell: python
 
   run-windows-command:
