@@ -13,7 +13,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: echo a string
-      run: echo "Simple YAML"
+      run: echo "YAML"
     # Runs a set of commands using the runners shell
     - name: multiline script
       run: |
