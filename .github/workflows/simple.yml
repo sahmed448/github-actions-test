@@ -8,7 +8,7 @@ on:
     branches: [ master ]
 
 jobs:
-  run-shell-command:
+  jb-run-shell-command:
     runs-on: ubuntu-latest
     steps:
     # Runs a single command using the runners shell
@@ -23,12 +23,13 @@ jobs:
     - name: python command
       run: |
         import platform
-        printt(platform.processor())
+        print(platform.processor())
+        print("jb-run-shell-command is sucesfull")
       shell: python
 
-  run-windows-command:
+  jb-run-windows-command:
     runs-on: windows-latest
-    needs: ["run-shell-command"]
+    needs: ["jb-run-shell-command"]
     steps:
       - name: Directory PowerShell
         run: Get-Location
