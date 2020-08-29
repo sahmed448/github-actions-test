@@ -5,9 +5,13 @@ jobs:
   jb-run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Simple python script Actions
+      - name: List Files
+        run: |
+          pwd
+          dir
+      - name: Simple JS Action
         id: greet
-        uses: sahmed448/github-actions-test@b2b9b6cb94e2de3cecccb931b8157e100f2c516d
+        uses: actions/hello-world-javascript-action@v1
         with: 
           who-to-greet: jb-run-github-actions
       - name: Log Greeting time
