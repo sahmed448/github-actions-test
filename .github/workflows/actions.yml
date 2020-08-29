@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: Simple python script Actions
         id: greet
-        uses: sahmed448/github-actions-test/blob/master/.github/workflows/simple.yml@b2b9b6cb94e2de3cecccb931b8157e100f2c516d
+        uses: sahmed448/github-actions-test@b2b9b6cb94e2de3cecccb931b8157e100f2c516d
         with: 
           who-to-greet: jb-run-github-actions
       - name: Log Greeting time
-        run: echo "${{steps.greet.outputs.time}}"
+        run: echo "${{steps.greet.outputs.time }}"
