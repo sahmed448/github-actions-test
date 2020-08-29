@@ -11,4 +11,4 @@ jobs:
         with: 
           who-to-greet: jb-run-github-actions
       - name: Log Greeting time
-        run: echo "${{steps.greet.outputs.time }}"
+        run: echo "${{steps.greet.outputs.time}}"
