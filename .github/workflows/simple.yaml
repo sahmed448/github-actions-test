@@ -3,7 +3,7 @@ name: Shell Commands-1
 on: [push]
 
 jobs:
-  run-shell-command:
+  Run-Shell-Command:
     runs-on: ubuntu-latest
     steps: 
       - name: echo a string
@@ -18,12 +18,18 @@ jobs:
         run: echo $PATH
         shell: bash
 
+  Run-Python-Command:
+    runs-on: ubuntu-latest
+    steps:
       - name: python Command
         run: |
           import platform
           print (platform.processor())
         shell: python
 
+  Lets-Learn-Basic-Arithmetic:
+    runs-on: ubuntu-latest
+    steps:
       - name: add numbers
         run: |
           a = 10
@@ -32,7 +38,7 @@ jobs:
           print("sum of a + b is :", c)
         shell: python
 
-      - name: sub numbers
+      - name: substract numbers
         run: |
           a=50
           b=10
@@ -43,5 +49,7 @@ jobs:
   User-Executing-Script:
       runs-on: ubuntu-latest
       steps:
-        - name: username
-          run: echo "User executing this script is Sardar"
+        - name: User Executing the script
+          run: 
+            echo "User Executing the script is: $USER"
+          shell: bash
