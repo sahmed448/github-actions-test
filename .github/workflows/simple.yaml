@@ -12,7 +12,4 @@ jobs:
         run: >
           node -v
           npm -v
-          a= 10
-          b = 20
-          c = a + b
-          echo c
+          echo "my name is Sardar"
