@@ -50,6 +50,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: User Executing the script
-          run: 
+          run: |
             echo "User Executing the script is: $USER"
           shell: bash
