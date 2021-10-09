@@ -24,6 +24,14 @@ jobs:
           print (platform.processor())
         shell: python
 
+      - name: add numbers
+        run: |
+          a = 10
+          b = 20
+          c = a + b
+          echo "sum of a + b is " c
+        shell: bash
+
   User-Executing-Script:
       runs-on: ubuntu-latest
       steps:
