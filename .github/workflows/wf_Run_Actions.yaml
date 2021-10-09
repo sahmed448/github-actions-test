@@ -15,5 +15,5 @@ jobs:
         run: echo "${{steps.greet.outputs.time}}"
       - name: List PWD & files
         run: |
-          PWD
+          pwd
           dir
