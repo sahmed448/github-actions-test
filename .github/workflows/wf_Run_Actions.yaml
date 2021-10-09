@@ -16,4 +16,4 @@ jobs:
       - name: List PWD & files
         run: |
           pwd
-          dir
+          ls
