@@ -17,3 +17,12 @@ jobs:
       steps:
         - name: username
           run: echo "User executing this script is Sardar"
+  Calculator:
+      runs-on: ubuntu-latest
+      steps:
+        - name: addition
+          run: >
+            a = 10
+            b = 20
+            c = a + b
+            echo "sum of a + b is " c
