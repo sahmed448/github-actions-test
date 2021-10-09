@@ -12,9 +12,18 @@ jobs:
         run: >
           node -v
           npm -v
+        shell: bash
+
       - name: Display the path
         run: echo $PATH
         shell: bash
+
+      - name: python Command
+        run: |
+          import platform
+          print (platform.processor())
+        shell: python
+
   User-Executing-Script:
       runs-on: ubuntu-latest
       steps:
