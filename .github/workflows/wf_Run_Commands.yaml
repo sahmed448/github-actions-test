@@ -1,4 +1,4 @@
-name: Run Shell Commands
+name: Run Shell Commands Workflow
 
 on: [push]
 

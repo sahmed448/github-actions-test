@@ -1,0 +1,12 @@
+name: Run Actions Workflow
+
+on: [push]
+
+jobs:
+  Run-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple Java Script Action
+        uses: actions/hello-world-javascript-action@v1
+        with: 
+          who-to-greet: Javed
