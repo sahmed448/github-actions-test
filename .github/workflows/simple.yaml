@@ -49,9 +49,11 @@ jobs:
   User-Executing-Script:
       runs-on: windows-latest
       steps:
-        - name: Directory powershell
-          run: Get-Location  
+        - name: Directory Powershell
+          run: Get-Location 
+        - name: Directory bash
+          run: pwd
         - name: User Executing the script
           run: |
-            echo "User Executing the script is: $USER"
+            echo "User Executing the script is: $Get-User"
           shell: bash
