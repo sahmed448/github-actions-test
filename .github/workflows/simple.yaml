@@ -32,6 +32,14 @@ jobs:
           print("sum of a + b is :", c)
         shell: python
 
+      - name: sub numbers
+        run: |
+          a=50
+          b=10
+          sub=$(( $a - $b))
+          echo "Difference is: $sub"
+        shell: bash     
+
   User-Executing-Script:
       runs-on: ubuntu-latest
       steps:
