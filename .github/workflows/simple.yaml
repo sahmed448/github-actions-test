@@ -29,8 +29,8 @@ jobs:
           a = 10
           b = 20
           c = a + b
-          echo "sum of a + b is " c
-        shell: bash
+          print("sum of a + b is :" c)
+        shell: python
 
   User-Executing-Script:
       runs-on: ubuntu-latest
