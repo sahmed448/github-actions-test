@@ -12,8 +12,6 @@ jobs:
         run: >
           node -v
           npm -v
-    
-jobs:
   User-Executing-Script:
       runs-on: ubuntu-latest
       steps:
