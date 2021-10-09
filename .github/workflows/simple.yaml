@@ -47,8 +47,10 @@ jobs:
         shell: bash     
 
   User-Executing-Script:
-      runs-on: ubuntu-latest
+      runs-on: windows-latest
       steps:
+        - name: Directory powershell
+          run: Get-Location  
         - name: User Executing the script
           run: |
             echo "User Executing the script is: $USER"
