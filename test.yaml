@@ -1,0 +1,15 @@
+name: Sardar
+age: 43
+address: "11227 babbitt ave: granada"
+active: true
+key:
+    key1: value
+    key2: s3
+    key3:
+        key: value
+        key2: value
+jsonObject: {key1: value1, key2: value2, key3: {key: value, key2: s3}}
+array:
+    - item1
+    - item2
+    - { Key1: value1, key2: value2}
