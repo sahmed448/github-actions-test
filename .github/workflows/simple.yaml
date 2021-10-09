@@ -55,5 +55,5 @@ jobs:
           run: pwd
         - name: User Executing the script
           run: |
-            echo "User Executing the script is: $user"
+            echo "User Executing the script is: $USER"
           shell: bash
