@@ -19,5 +19,8 @@ jobs:
     - name: List S3 Buckets
       run: aws s3api list-buckets
 
+    - name: S3 Sync
+      uses: jakejarvis/s3-sync-action@v0.5.1
+
 
 
