@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - wmtu
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Check out sahmed448/wmtu
     - uses: actions/checkout@v2
@@ -22,4 +20,4 @@ jobs:
 
     - name: Copy files to the s3 website content bucket
       run:
-        aws s3 sync C:\GITHUBACTIONS\.github\workflows\ s3://${{ secrets.AWS_S3_BUCKET_NAME }}/wmtu
+        aws s3 sync C:\GITHUBACTIONS\.github\workflows\locations.sql s3://${{ secrets.AWS_S3_BUCKET_NAME }}/wmtu/
