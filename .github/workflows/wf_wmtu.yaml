@@ -1,9 +1,6 @@
-name: workflow for wallmart us (wmtu)
+name: secrets
 
-on:
-  push:
-    branches:
-      - wmtu
+on: [push]
 
 jobs:
   build:
@@ -11,9 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out sahmed448/wmtu
-    - uses: actions/checkout@v2
-    
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
