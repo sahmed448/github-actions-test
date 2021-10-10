@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@wmtu
-    - uses: jakejarvis/s3-sync-action@wmtu
+    - uses: jakejarvis/s3-sync-action@v1
       with:
         args: --acl public-read --follow-symlinks --delete --exclude '.git*/*'
       env:
