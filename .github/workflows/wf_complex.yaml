@@ -1,0 +1,24 @@
+name: wf_first
+
+on: 
+  push:
+    branches:
+      - main
+  pull-request:
+    branches:
+      - main
+
+jobs:
+  job1:
+    name: First Job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Todays Date
+      run: date
+
+  job2:
+    name: Second job
+    runs-on: windows-latest 
+    steps:
+    - name: Print Todays Date
+      run: Get-Date
