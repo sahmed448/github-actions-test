@@ -3,33 +3,28 @@ name: wf_first
 on: push
 
 jobs:
-  job1:
-    name: ubuntu
+  ubuntu:
     runs-on: ubuntu-latest
     steps:
-    - name: Print Todays Date
+    - name: Print Todays Date in ubuntu
       run: date
 
-  job2:
-    name: windows
+  windows:
     runs-on: windows-latest 
     steps:
-    - name: Print Todays Date
+    - name: Print Todays Date in windows
       run: Get-Date
 
-  job3:
-    name: mac
+  macos:
     runs-on: macos-latest 
     steps:
-    - name: Print Todays Date
+    - name: Print Todays Date in macos
       run: date
 
-
-  job4:
-    name: depends
-    needs: [ubuntu,windows,mac]
+  depends:
+    needs: [ubuntu, windows, macos]
     runs-on: windows-latest 
     steps:
-    - name: Print Todays Date
+    - name: Print Todays Date in windows
       run: Get-Date
 
