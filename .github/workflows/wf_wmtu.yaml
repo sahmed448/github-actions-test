@@ -16,9 +16,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check out sahmed448/wmtu
       - uses: actions/checkout@v2
-      - run: npm install
-      - run: npm run build
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
