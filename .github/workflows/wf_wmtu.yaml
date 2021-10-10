@@ -16,7 +16,8 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }}
         AWS_S3_BUCKET: ${{secrets.AWS_S3_BUCKET}}
 
-    - uses: actions/checkout@v2
-    - name: S3 Sync
-      uses: jakejarvis/s3-sync-action@v0.5.1
+    - name: List S3 Buckets
+      run: aws s3api list-buckets
+
+
 
