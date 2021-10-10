@@ -1,6 +1,9 @@
-name: secrets
+name: workflow for wallmart us (wmtu)
 
-on: [push]
+on:
+  push:
+    branches:
+      - wmtu
 
 jobs:
   build:
