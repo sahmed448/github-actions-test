@@ -4,21 +4,21 @@ on: push
 
 jobs:
   job1:
-    name: Ubuntu
+    name: ubuntu
     runs-on: ubuntu-latest
     steps:
     - name: Print Todays Date
       run: date
 
   job2:
-    name: Windows
+    name: windows
     runs-on: windows-latest 
     steps:
     - name: Print Todays Date
       run: Get-Date
 
   job3:
-    name: MacOS
+    name: mac
     runs-on: macos-latest 
     steps:
     - name: Print Todays Date
@@ -26,8 +26,8 @@ jobs:
 
 
   job4:
-    name: Depends
-    needs: [Ubuntu, Windows, MacOS]
+    name: depends
+    needs: [ubuntu,windows,mac]
     runs-on: windows-latest 
     steps:
     - name: Print Todays Date
