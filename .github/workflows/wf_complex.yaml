@@ -10,14 +10,14 @@ on:
 
 jobs:
   job1:
-    name: First Job
+    name: Job1 - Print date in ubuntu
     runs-on: ubuntu-latest
     steps:
     - name: Print Todays Date
       run: date
 
   job2:
-    name: Second job
+    name: Job2 - Print date in windows
     runs-on: windows-latest 
     steps:
     - name: Print Todays Date
