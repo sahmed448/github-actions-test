@@ -5,7 +5,7 @@ on:
     branches:
       - passing-arguments-to-actions
 
-  job:
+jobs:
   build:
 
     runs-on: ubuntu-latest
