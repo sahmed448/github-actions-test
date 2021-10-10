@@ -21,4 +21,4 @@ jobs:
       run: aws s3api list-buckets
     - name: Copy files to the s3 website content bucket
       run:
-        aws s3 copy C:\GITHUBACTIONS\.github\workflows\locations.sql s3://${{ secrets.AWS_S3_BUCKET_NAME }}/wmtu/
+        aws s3 cp C:\GITHUBACTIONS\.github\workflows\locations.sql s3://${{ secrets.AWS_S3_BUCKET_NAME }}/wmtu/
