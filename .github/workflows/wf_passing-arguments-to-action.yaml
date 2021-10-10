@@ -1,0 +1,16 @@
+name: Build Tomcat
+
+on: 
+  push:
+    branches:
+      - passing-arguments-to-actions
+
+  jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out tomcat-users.xml
+      uses: actions/checkout@v2
+
