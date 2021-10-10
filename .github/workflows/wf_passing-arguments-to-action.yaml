@@ -19,3 +19,14 @@ jobs:
           ls -a
           java -version
 
+    - name: Check out Apache Tomcat
+      uses: actions/checkout@v2
+      with:
+        repository: apache/tomcat # Repository name with owner
+        ref: master               # The branch, tag or SHA to checkout
+        path: ./tomcat            # Relative path under $GITHUB_WORKSPACE
+
+    - name: List project files and java version
+      run: |
+          ls -a
+          java -version
