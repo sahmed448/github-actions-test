@@ -2,8 +2,6 @@ name: wf_first
 
 on: 
   push:
-    branches:
-      - main
 
 jobs:
   job1:
