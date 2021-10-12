@@ -1,0 +1,24 @@
+name: Python application
+
+on: 
+  push:
+    branches:
+      - marketplace
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: '2'
+      - name: gitleaks-action
+        uses: zricethezav/gitleaks-action@master
+
+  build:
+    needs: gitleaks
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the code
+      uses: actions/checkout@v2
