@@ -6,16 +6,16 @@ on:
       - matrix
 
 jobs:
-  python_versions:
+  python_version:
     strategy:
       matrix:
-        python_version: [3.6, 3.8]
+        python-version: [3.6, 3.8]
   runs-on: ubuntu-latest
   steps:
-    - uses: actions/setup-python@v2.2.2
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
       with:
-        python_version: {{ matrix.python_version }}
-
-    - name: Log python version & print
-      run: python -v
-      print ("hello world")
+        python-version: ${{ matrix.python-version }}
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
