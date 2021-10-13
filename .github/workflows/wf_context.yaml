@@ -15,5 +15,5 @@ jobs:
       - name: job context
         run: echo "${{ toJSON(job) }}"
 
-      - name: job container
-        run: echo "${{ toJSON(job.container) }}"
+      - name: job status
+        run: echo "${{ toJSON(job.status) }}"
