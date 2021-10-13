@@ -7,7 +7,7 @@ jobs:
   one:
     runs-on: ubuntu-latest
     steps:
-      - name: Set env variables
+      - name: Set env variable
         env: 
           emp_name: "Javed"
           run: |
