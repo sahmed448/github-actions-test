@@ -17,3 +17,6 @@ jobs:
 
       - name: job status
         run: echo "${{ toJSON(job.status) }}"
+
+      - name: github action running
+        run: echo "${{ toJSON(github.action) }}"
