@@ -25,4 +25,5 @@ jobs:
       - name: ENV_GLOBAL from second job
         run: |
           echo "ENV_GLOBAL: ${ENV_GLOBAL}"
+          echo "Github Actor: ${GITHUB_ACTOR}"
 
