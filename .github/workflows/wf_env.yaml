@@ -24,6 +24,6 @@ jobs:
     runs-on: ubuntu-latest
   steps: 
     - name: echo ENV_GLOBAL from second job
-      run:  
+      run:  |
         echo "ENV_JOBS: ${ENV_JOBS}"
 
