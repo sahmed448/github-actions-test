@@ -23,7 +23,7 @@ jobs:
   second-job:
     runs-on: ubuntu-latest
   steps: 
-    - name: echo ENV_GLOBAL from second job
-      run:  |
-        echo "ENV_GLOBAL: ${ENV_GLOBAL}"
+      - name: ENV_GLOBAL from second job
+        run: |
+          echo "ENV_GLOBAL: ${ENV_GLOBAL}"
 
