@@ -25,5 +25,5 @@ jobs:
   steps: 
     - name: echo ENV_GLOBAL from second job
       run:  |
-        echo "ENV_JOBS: ${ENV_JOBS}"
+        echo "ENV_GLOBAL: ${ENV_GLOBAL}"
 
