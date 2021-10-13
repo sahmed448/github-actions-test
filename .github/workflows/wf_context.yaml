@@ -9,7 +9,9 @@ jobs:
     steps:
       - name: Set env variables
         env: 
-          name: "Javed"        
+          emp_name: "Javed"
+          run: |
+            echo "emp_name: ${emp_name}"       
 
       - name: Dump GitHub context
         env:
