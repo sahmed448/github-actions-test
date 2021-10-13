@@ -15,10 +15,10 @@ jobs:
       ENV_JOBS: Available to log-env job only
       ENV_GLOBAL: replaced at log-env
     steps: 
-      -name: Log "Accessing environment variables in run command"
-      run: |
-        echo "ENV_GLOBAL: ${ENV_GLOBAL}""
-        echo "ENV_JOBS: ${ENV_JOBS}"
+      - name: Log Accessing environment variables in run command
+        run: |
+          echo "ENV_GLOBAL: ${ENV_GLOBAL}"
+          echo "ENV_JOBS: ${ENV_JOBS}"
 jobs: 
   second-job:
     runs-on: ubuntu-latest
