@@ -13,4 +13,4 @@ jobs:
         run: echo "$GITHUB_CONTEXT"
 
       - name: job context
-        run: echo ${{ toJSON(job) }}
+        run: echo "${{ toJSON(job) }}"
