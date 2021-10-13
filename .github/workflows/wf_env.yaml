@@ -26,4 +26,5 @@ jobs:
         run: |
           echo "ENV_GLOBAL: ${ENV_GLOBAL}"
           echo "Github Actor: ${GITHUB_ACTOR}"
+          echo "Github Token: ${secrets.GITHUB_TOKEN}}"
 
