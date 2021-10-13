@@ -6,15 +6,16 @@ on:
       - matrix
 
 jobs:
-  python_version:
+  python_version: 
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: [3.6, 3.8]
-  runs-on: ubuntu-latest
+    
   steps:
     - uses: actions/checkout@v2
     - name: Set up Python
-      uses: actions/setup-python@v2
+    uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
     - name: Display Python version
