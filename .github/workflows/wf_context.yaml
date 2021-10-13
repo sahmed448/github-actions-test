@@ -12,11 +12,5 @@ jobs:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
 
-      - name: job context
+      - name: Dump Job context
         run: echo "${{ toJSON(job) }}"
-
-      - name: job status
-        run: echo "${{ toJSON(job.status) }}"
-
-      - name: github action running
-        run: echo "${{ toJSON(github.action) }}"
