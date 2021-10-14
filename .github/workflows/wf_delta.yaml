@@ -9,8 +9,6 @@ jobs:
   generate-matrix:
     name: Generate matrix for build
     runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - uses: actions/checkout@v2
       - name: Check changed files
